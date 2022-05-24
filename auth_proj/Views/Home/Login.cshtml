@@ -1,0 +1,30 @@
+﻿@page
+@model auth_proj.Views.Home.Login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<div>
+    
+    <form method="post" action="Login">
+        @Html.AntiForgeryToken()
+        <input type="text" name="username"/>
+        <br/>
+        <br/>
+        <input type="password" name="password"/>
+        <br/>
+        <br/>
+        <input type="submit"/>
+    </form>
+
+</div>
+</body>
+</html>
